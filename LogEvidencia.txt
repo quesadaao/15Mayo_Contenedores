@@ -1,0 +1,150 @@
+PS C:\Repo\quesadaao\15Mayo_Contenedores> docker-compose logs
+nodejs  | [nodemon] 1.19.4
+nodejs  | [nodemon] to restart at any time, enter `rs`
+nodejs  | [nodemon] watching dir(s): *.*
+nodejs  | [nodemon] watching extensions: js,mjs,json
+nodejs  | [nodemon] starting `node app.js`
+nodejs  | Example app listening on ${port}!
+nodejs  | MongoDB is connected
+db      | 2023-05-15T03:42:09.235+0000 W CONTROL  [main] Option: sslMode is deprecated. Please use tlsMode instead.
+db      | about to fork child process, waiting until server is ready for connections.
+db      | forked process: 26
+db      | 2023-05-15T03:42:09.239+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+db      | 2023-05-15T03:42:09.243+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] MongoDB starting : pid=26 port=27017 dbpath=/data/db 64-bit host=7acbeb9cd123
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] db version v4.1.8
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] git version: 530a26bc5387de3dd131a18801a6c3253c4f3220
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] modules: none
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] build environment:
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten]     distarch: x86_64
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+db      | 2023-05-15T03:42:09.249+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 27017, ssl: { mode: "disabled" } }, processManagement: { fork: true, pidFilePath: "/tmp/docker-entrypoint-temp-mongod.pid" }, systemLog: { destination: "file", logAppend: true, path: "/proc/1/fd/1" } }
+db      | 2023-05-15T03:42:09.249+0000 I STORAGE  [initandlisten]
+db      | 2023-05-15T03:42:09.250+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+db      | 2023-05-15T03:42:09.250+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+db      | 2023-05-15T03:42:09.250+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5820M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),db      | 2023-05-15T03:42:09.799+0000 I STORAGE  [initandlisten] WiredTiger message [1684122129:798990][26:0x7f415cf84a80], txn-recover: Set global recovery timestamp: (0,0)
+db      | 2023-05-15T03:42:09.818+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+db      | 2023-05-15T03:42:09.849+0000 I STORAGE  [initandlisten] Timestamp monitor starting
+db      | 2023-05-15T03:42:09.858+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:09.858+0000 I CONTROL  [initandlisten] ** NOTE: This is a development version (4.1.8) of MongoDB.
+db      | 2023-05-15T03:42:09.858+0000 I CONTROL  [initandlisten] **       Not recommended for production.
+db      | 2023-05-15T03:42:09.858+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+db      | 2023-05-15T03:42:09.859+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:09.860+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 87577183-6b2d-48eb-b674-e21ae74d276f
+db      | 2023-05-15T03:42:09.890+0000 I INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+db      | 2023-05-15T03:42:09.891+0000 I SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+db      | 2023-05-15T03:42:09.891+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+db      | 2023-05-15T03:42:09.897+0000 I SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+db      | 2023-05-15T03:42:09.897+0000 I SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+db      | 2023-05-15T03:42:09.897+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: de775f52-76e6-42de-aa11-231dd876f5b4
+db      | 2023-05-15T03:42:09.915+0000 I INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+db      | 2023-05-15T03:42:09.916+0000 I SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+db      | 2023-05-15T03:42:09.916+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+db      | 2023-05-15T03:42:09.917+0000 I NETWORK  [initandlisten] Listening on /tmp/mongodb-27017.sock
+db      | 2023-05-15T03:42:09.917+0000 I SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+db      | 2023-05-15T03:42:09.917+0000 I NETWORK  [initandlisten] Listening on 127.0.0.1
+db      | 2023-05-15T03:42:09.917+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+db      | 2023-05-15T03:42:09.918+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: a5b38ec6-af1f-4b22-a65c-a5fb47aaaed1
+db      | child process started successfully, parent exiting
+db      | 2023-05-15T03:42:09.937+0000 I INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+db      | 2023-05-15T03:42:09.957+0000 I INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+db      | 2023-05-15T03:42:09.957+0000 I INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 500 megabytes of RAM
+db      | 2023-05-15T03:42:09.957+0000 I INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+db      | 2023-05-15T03:42:09.957+0000 I INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+db      | 2023-05-15T03:42:09.958+0000 I INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+db      | 2023-05-15T03:42:09.978+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33530 #1 (1 connection now open)
+db      | 2023-05-15T03:42:09.978+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:33530 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.1.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+db      | 2023-05-15T03:42:09.983+0000 I NETWORK  [conn1] end connection 127.0.0.1:33530 (0 connections now open)
+db      | 2023-05-15T03:42:10.041+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33532 #2 (1 connection now open)
+db      | 2023-05-15T03:42:10.041+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:33532 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.1.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+db      | 2023-05-15T03:42:10.080+0000 I SHARDING [conn2] Marking collection admin.system.users as collection version: <unsharded>
+db      | 2023-05-15T03:42:10.080+0000 I STORAGE  [conn2] createCollection: admin.system.users with generated UUID: a20fb882-d654-4bf2-a8c4-b94540a731c5
+db      | 2023-05-15T03:42:10.106+0000 I INDEX    [conn2] index build: done building index _id_ on ns admin.system.usersdb      | 2023-05-15T03:42:10.117+0000 I INDEX    [conn2] index build: done building index user_1_db_1 on ns admin.system.users
+db      | Successfully added user: {
+db      |       "user" : "sammy",
+db      |       "roles" : [
+db      |               {
+db      |                       "role" : "root",
+db      |                       "db" : "admin"
+db      |               }
+db      |       ]
+db      | }
+db      | 2023-05-15T03:42:10.120+0000 E -        [main] Error saving history file: FileOpenFailed: Unable to open() file /home/mongodb/.dbshell: Unknown error
+db      | 2023-05-15T03:42:10.121+0000 I NETWORK  [conn2] end connection 127.0.0.1:33532 (0 connections now open)
+db      |
+db      | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+db      |
+db      | 2023-05-15T03:42:10.136+0000 W CONTROL  [main] Option: sslMode is deprecated. Please use tlsMode instead.
+db      | 2023-05-15T03:42:10.137+0000 I CONTROL  [main] ***** SERVER RESTARTED *****
+db      | 2023-05-15T03:42:10.138+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+db      | killing process with pid: 26
+db      | 2023-05-15T03:42:10.141+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+db      | 2023-05-15T03:42:10.141+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...db      | 2023-05-15T03:42:10.141+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sockdb      | 2023-05-15T03:42:10.142+0000 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+db      | 2023-05-15T03:42:10.143+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+db      | 2023-05-15T03:42:10.144+0000 I STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+db      | 2023-05-15T03:42:10.144+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+db      | 2023-05-15T03:42:10.146+0000 I STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+db      | 2023-05-15T03:42:10.146+0000 I STORAGE  [signalProcessingThread] Finished shutting down session sweeper threaddb      | 2023-05-15T03:42:10.146+0000 I STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+db      | 2023-05-15T03:42:10.224+0000 I STORAGE  [signalProcessingThread] Finished shutting down journal flusher threaddb      | 2023-05-15T03:42:10.224+0000 I STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+db      | 2023-05-15T03:42:10.268+0000 I STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+db      | 2023-05-15T03:42:10.283+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+db      | 2023-05-15T03:42:10.283+0000 I CONTROL  [signalProcessingThread] now exiting
+db      | 2023-05-15T03:42:10.283+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+db      |
+db      | MongoDB init process complete; ready for start up.
+db      |
+db      | 2023-05-15T03:42:11.174+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=7acbeb9cd123
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] db version v4.1.8
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] git version: 530a26bc5387de3dd131a18801a6c3253c4f3220
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] modules: none
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] build environment:
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten]     distarch: x86_64
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+db      | 2023-05-15T03:42:11.179+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "*" }, security: { authorization: "enabled" } }
+db      | 2023-05-15T03:42:11.179+0000 I STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+db      | 2023-05-15T03:42:11.179+0000 I STORAGE  [initandlisten]
+db      | 2023-05-15T03:42:11.179+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+db      | 2023-05-15T03:42:11.179+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+db      | 2023-05-15T03:42:11.179+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5820M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),db      | 2023-05-15T03:42:11.892+0000 I STORAGE  [initandlisten] WiredTiger message [1684122131:892453][1:0x7fd4eef6da80], txn-recover: Main recovery loop: starting at 1/29824 to 2/256
+db      | 2023-05-15T03:42:11.966+0000 I STORAGE  [initandlisten] WiredTiger message [1684122131:966375][1:0x7fd4eef6da80], txn-recover: Recovering log 1 through 2
+db      | 2023-05-15T03:42:12.070+0000 I STORAGE  [initandlisten] WiredTiger message [1684122132:70700][1:0x7fd4eef6da80], txn-recover: Recovering log 2 through 2
+db      | 2023-05-15T03:42:12.123+0000 I STORAGE  [initandlisten] WiredTiger message [1684122132:123379][1:0x7fd4eef6da80], txn-recover: Set global recovery timestamp: (0,0)
+db      | 2023-05-15T03:42:12.154+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+db      | 2023-05-15T03:42:12.161+0000 I STORAGE  [initandlisten] Timestamp monitor starting
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten] ** NOTE: This is a development version (4.1.8) of MongoDB.
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten] **       Not recommended for production.
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+db      | 2023-05-15T03:42:12.164+0000 I CONTROL  [initandlisten]
+db      | 2023-05-15T03:42:12.188+0000 I SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+db      | 2023-05-15T03:42:12.189+0000 I SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+db      | 2023-05-15T03:42:12.189+0000 I SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+db      | 2023-05-15T03:42:12.190+0000 I SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+db      | 2023-05-15T03:42:12.190+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+db      | 2023-05-15T03:42:12.191+0000 I NETWORK  [initandlisten] Listening on /tmp/mongodb-27017.sock
+db      | 2023-05-15T03:42:12.191+0000 I NETWORK  [initandlisten] Listening on 0.0.0.0
+db      | 2023-05-15T03:42:12.191+0000 I SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+db      | 2023-05-15T03:42:12.191+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+db      | 2023-05-15T03:42:12.832+0000 I NETWORK  [listener] connection accepted from 172.29.0.3:35843 #1 (1 connection now open)
+db      | 2023-05-15T03:42:12.832+0000 I NETWORK  [conn1] end connection 172.29.0.3:35843 (0 connections now open)
+db      | 2023-05-15T03:42:13.632+0000 I NETWORK  [listener] connection accepted from 172.29.0.3:46828 #2 (1 connection now open)
+db      | 2023-05-15T03:42:13.640+0000 I NETWORK  [conn2] received client metadata from 172.29.0.3:46828 conn2: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.10.102.1-microsoft-standard-WSL2" }, platform: "Node.js v10.24.1, LE, mongodb-core: 3.1.11" }
+db      | 2023-05-15T03:42:13.640+0000 I SHARDING [conn2] Marking collection admin.system.users as collection version: <unsharded>
+db      | 2023-05-15T03:42:13.664+0000 I ACCESS   [conn2] Successfully authenticated as principal sammy on admin
+PS C:\Repo\quesadaao\15Mayo_Contenedores>
